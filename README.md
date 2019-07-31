@@ -11,7 +11,7 @@ yum install java-1.8.0-openjdk java-1.8.0-openjdk-devel
 
 下载文件部署文件
 ```
-git clone https://github.com/fei5seven/ssrpanel-v2ray-java.git
+git clone https://github.com/fei5seven/ssrpanel-v2ray-java.git /v2ray
 cd ssrpanel-v2ray-java
 ```
 修改 config.properties 文件
@@ -40,7 +40,7 @@ java -jar ssrpanel-v2ray.jar
 添加开机启动
 ```
 vim /etc/rc.local
-bash /root/ssrpanel-v2ray-java/v2start.sh
+bash /v2ray/v2start.sh
 ```
 
 
