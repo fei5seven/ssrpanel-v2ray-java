@@ -9,9 +9,14 @@ sudo apt install openjdk-8-jdk
 yum install java-1.8.0-openjdk java-1.8.0-openjdk-devel
 ```
 
-下载文件
+下载文件部署文件
 ```
 git clone https://github.com/fei5seven/ssrpanel-v2ray-java.git
+cd ssrpanel-v2ray-java
+```
+执行一次部署
+```
+java -jar ssrpanel-v2ray.jar
 ```
 
 修改配置文件
