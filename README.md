@@ -12,7 +12,7 @@ yum install java-1.8.0-openjdk java-1.8.0-openjdk-devel
 下载文件部署文件
 ```
 git clone https://github.com/fei5seven/ssrpanel-v2ray-java.git /v2ray
-cd ssrpanel-v2ray-java
+cd /v2ray
 ```
 修改 config.properties 文件
 ```
@@ -44,7 +44,7 @@ bash /v2ray/v2start.sh
 ```
 
 
-安装caddy对接，端口9999
+安装caddy对接，端口9999(也可作为旧版v2ray一键懒人安装方式）
 ```
 bash <(wget --no-check-certificate -qO- https://raw.githubusercontent.com/fei5seven/Shell-1/master/deploy_node.sh)
 ```
