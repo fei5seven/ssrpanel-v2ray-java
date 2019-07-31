@@ -1,4 +1,4 @@
 #!/bin/bash
 # 
-cd /root/v2ray
+cd /root/ssrpanel-v2ray-java
 nohup java -jar ssrpanel-v2ray.jar  > log.file  2>&1 &
