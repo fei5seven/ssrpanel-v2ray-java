@@ -24,3 +24,9 @@ bash /root/ssrpanel-v2ray-java/v2start.sh
 
 
 安装caddy对接，端口9999
+```
+bash <(wget --no-check-certificate -qO- https://raw.githubusercontent.com/fei5seven/Shell-1/master/deploy_node.sh)
+```
+
+
+## [安装锐速](https://github.com/fei5seven/lotServer)
