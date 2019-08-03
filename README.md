@@ -4,7 +4,7 @@
 
 ```
 # ubuntu
-sudo apt install openjdk-8-jdk
+sudo apt-get install default-jdk
 # centos
 yum install java-1.8.0-openjdk java-1.8.0-openjdk-devel
 ```
