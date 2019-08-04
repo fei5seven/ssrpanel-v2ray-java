@@ -43,7 +43,10 @@ java -jar ssrpanel-v2ray.jar
 vim /etc/rc.local
 bash /v2ray/v2start.sh
 ```
-
+修改时区
+````
+cp /usr/share/zoneinfo/Asia/Shanghai  /etc/localtime
+````
 
 安装caddy对接，选择3，端口9999(也可作为旧版v2ray一键懒人安装方式）
 ```
