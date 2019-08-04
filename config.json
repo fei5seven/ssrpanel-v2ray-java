@@ -15,7 +15,7 @@
   "inbounds": [
     {
       "listen": "127.0.0.1",
-      "port": 10086,
+      "port": 10087,
       "protocol": "dokodemo-door",
       "settings": {
         "address": "127.0.0.1"
@@ -25,7 +25,7 @@
     {
       "tag": "proxy",
       "listen": "127.0.0.1",
-      "port": 9999,
+      "port": 10086,
       "protocol": "vmess",
       "settings": {
         "clients": [],
