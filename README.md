@@ -12,6 +12,7 @@ yum install java-1.8.0-openjdk java-1.8.0-openjdk-devel
 下载文件部署文件
 ```
 git clone https://github.com/fei5seven/ssrpanel-v2ray-java.git /v2ray
+chmod -R a+x /v2ray
 cd /v2ray
 ```
 修改 config.properties 文件
