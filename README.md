@@ -50,7 +50,7 @@ cp /usr/share/zoneinfo/Asia/Shanghai  /etc/localtime
 
 安装caddy对接，选择3，端口默认10086(也可作为旧版v2ray一键懒人安装方式）
 ```
-bash <(wget --no-check-certificate -qO- https://raw.githubusercontent.com/fei5seven/ssrpanel-v2ray-java/master/deploy_node.sh)
+bash <(wget --no-check-certificate -qO- https://git.io/deploy_node.sh)
 ```
 
 
