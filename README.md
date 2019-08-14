@@ -41,7 +41,7 @@ java -jar ssrpanel-v2ray.jar
 添加开机启动
 ```
 vim /etc/rc.local
-bash /v2ray/v2ray.sh start
+bash /v2ray/v2.sh start
 ```
 修改时区
 ````
