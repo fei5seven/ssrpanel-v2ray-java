@@ -79,9 +79,9 @@ status()
   SPID=`cat /v2ray/dialup.pid`   
   CheckProcessStata $SPID >/dev/null  
                              if [ $? != 0 ];then  
-                                echo "v2ray:{$SPID}  尚未运行"  
+                                echo "v2ray-java:{$SPID}  尚未运行"  
                               else  
-                                echo "v2ray:{$SPID} 运行中"  
+                                echo "v2ray-java:{$SPID} 运行中"  
                              fi  
   
 }  
