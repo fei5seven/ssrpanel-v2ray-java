@@ -41,8 +41,13 @@ java -jar ssrpanel-v2ray.jar
 添加开机启动
 ```
 vim /etc/rc.local
-bash /v2ray/v2.sh start
+bash /v2ray/v2.sh
 ```
+脚本使用方法 
+````
+bash /v2ray/v2.sh  {start|stop|status|restart}
+````
+
 修改时区
 ````
 cp /usr/share/zoneinfo/Asia/Shanghai  /etc/localtime
