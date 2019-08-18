@@ -3,13 +3,13 @@
  - 不建议内存低于512M超小鸡使用，java本身占用内存很高。
  - 每天0点自动检查v2ray更新，因此基本不用管它。
 ***
-***
   * [安装JDK](#安装JDK)
   * [安装和调试](#安装和调试)
   * [脚本使用方法](#脚本使用方法)
   * [修改时区](#修改时区)
   * [安装caddy对接](#安装caddy对接)
   * [安装锐速](#安装锐速)
+***
 #### 安装JDK
 ```
 # ubuntu
@@ -17,7 +17,6 @@ sudo apt-get install default-jdk
 # centos
 yum install java-1.8.0-openjdk java-1.8.0-openjdk-devel
 ```
-***
 ***
 #### 安装和调试
  - 下载部署文件
@@ -56,13 +55,11 @@ bash /v2ray/v2.sh start
 ```
 如果能正确获取用户数就基本没问题了。
 ***
-***
 #### 脚本使用方法 
 控制v2ray和java控制器的启动停止等。
 ````
 bash /v2ray/v2.sh  {start|stop|status|restart}
 ````
-***
 ***
  #### 修改时区
  为的是对接面板的流量统计
@@ -70,12 +67,10 @@ bash /v2ray/v2.sh  {start|stop|status|restart}
 cp /usr/share/zoneinfo/Asia/Shanghai  /etc/localtime
 ````
 ***
-***
 #### 安装caddy对接
 选择3，端口默认10086(也可作为旧版v2ray 4.9.0一键懒人安装方式）
 ```
 bash <(wget --no-check-certificate -qO- https://git.io/deploy_node.sh)
 ```
-***
 ***
 #### [安装锐速](https://github.com/fei5seven/lotServer)
