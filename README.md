@@ -56,10 +56,10 @@ bash /v2ray/v2.sh start
 ***
 ***
 #### 脚本使用方法 
+控制v2ray和java控制器的启动停止等。
 ````
 bash /v2ray/v2.sh  {start|stop|status|restart}
 ````
-控制v2ray和java控制器的启动停止等。
 ***
 ***
  #### 修改时区
