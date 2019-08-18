@@ -37,7 +37,7 @@ cd /v2ray
 - v2ray.level (用户等级，暂无用)
 ```
 ~~用默认参数就好，现在也没小鸡还32位了吧=，=~~
-数据库配置(远程连接SSRPanel的数据库，必须严格填写)
+ - 数据库配置(远程连接SSRPanel的数据库，必须严格填写)
 ```
 - node.id (面板添加节点后得到的节点ID)
 - datasource.url (数据库的连接URL, 格式为 jdbc:mysql://地址:端口/数据库名称?serverTimezone=GMT%2B8)
@@ -53,7 +53,7 @@ java -jar ssrpanel-v2ray.jar
 vim /etc/rc.local
 bash /v2ray/v2.sh start
 ```
-如果能正确获取用户数就基本没问题了。
+如果能正确获取用户数就基本没问题了。报错的话基本就是数据库配置这里的填写错误了。
 ***
 #### 脚本使用方法 
 控制v2ray和java控制器的启动停止等。
