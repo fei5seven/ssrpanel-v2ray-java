@@ -16,6 +16,7 @@ sudo apt-get install default-jdk
 yum install java-1.8.0-openjdk java-1.8.0-openjdk-devel
 ```
 ***
+***
 #### 安装和调试
  - 下载部署文件
 ```
