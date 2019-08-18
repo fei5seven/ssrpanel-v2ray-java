@@ -1,23 +1,25 @@
 # ssrpanel-v2ray-java
-
-安装JDK
-
+ - 不建议内存低于512M超小鸡使用，java本身占用内存很高。
+***
+***
+ - 安装JDK
 ```
 # ubuntu
 sudo apt-get install default-jdk
 # centos
 yum install java-1.8.0-openjdk java-1.8.0-openjdk-devel
 ```
-
+***
 下载文件部署文件
 ```
 git clone https://github.com/fei5seven/ssrpanel-v2ray-java.git /v2ray
 chmod -R a+x /v2ray
 cd /v2ray
 ```
+***
 修改 config.properties 文件
-```
 几个重点配置项
+```
 - v2ray.system (操作系统，可选值：linux、windows)
 - v2ray.arch (操作系统位数，可选值：32、64)
 - v2ray.tag (VMess协议的tag)
@@ -31,32 +33,33 @@ cd /v2ray
 - datasource.username (用户名)
 - datasource.password (密码)
 ```
+***
 执行一次部署
 ```
 java -jar ssrpanel-v2ray.jar
 ```
-
-修改配置文件
-
+***
 添加开机启动
 ```
 vim /etc/rc.local
 bash /v2ray/v2.sh start
 ```
+***
 脚本使用方法 
 ````
 bash /v2ray/v2.sh  {start|stop|status|restart}
 ````
-
-修改时区
+控制v2ray和java控制器的启动停止等。
+***
+修改时区，对接面板的流量统计
 ````
 cp /usr/share/zoneinfo/Asia/Shanghai  /etc/localtime
 ````
-
+***
 安装caddy对接，选择3，端口默认10086(也可作为旧版v2ray一键懒人安装方式）
 ```
 bash <(wget --no-check-certificate -qO- https://git.io/deploy_node.sh)
 ```
-
-
+***
+***
 ## [安装锐速](https://github.com/fei5seven/lotServer)
