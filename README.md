@@ -1,5 +1,7 @@
 # ssrpanel-v2ray-java
+ - 此为ssrpanel面板对应的V2ray后端。
  - 不建议内存低于512M超小鸡使用，java本身占用内存很高。
+ - 每天0点自动检查v2ray更新，因此基本不用管它。
 ***
 ***
   * [安装JDK](#安装JDK)
@@ -70,7 +72,7 @@ cp /usr/share/zoneinfo/Asia/Shanghai  /etc/localtime
 ***
 ***
 #### 安装caddy对接
-选择3，端口默认10086(也可作为旧版v2ray一键懒人安装方式）
+选择3，端口默认10086(也可作为旧版v2ray 4.9.0一键懒人安装方式）
 ```
 bash <(wget --no-check-certificate -qO- https://git.io/deploy_node.sh)
 ```
