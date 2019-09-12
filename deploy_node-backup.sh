@@ -201,7 +201,7 @@ install_caddy() {
 		update-rc.d -f caddy defaults
 	fi
 
-	mkdir -p /etc/ssl/caddy
+
 
 	if [ -z "$(grep www-data /etc/passwd)" ]; then
 		useradd -M -s /usr/sbin/nologin www-data
