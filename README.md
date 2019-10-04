@@ -68,6 +68,11 @@ bash /v2ray/v2.sh  {start|stop|status|restart}
 ````
 cp /usr/share/zoneinfo/Asia/Shanghai  /etc/localtime
 ````
+或者
+````
+dpkg-reconfigure tzdata
+
+````
 ***
 #### 安装caddy对接
 选择3，端口默认10086(也可作为旧版v2ray 4.9.0一键懒人安装方式）
