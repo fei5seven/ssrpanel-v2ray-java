@@ -1,6 +1,6 @@
 # ssrpanel-v2ray-java
  ~~基本完事了，不会再更新了~~
- - 此为ssrpanel面板对应的V2ray后端。整理自[MoeGrid](https://github.com/MoeGrid/ssrpanel-v2ray)大佬+个人修改部分内容
+ - 此为ssrpanel面板（4.8.0）对应的V2ray后端。整理自[MoeGrid](https://github.com/MoeGrid/ssrpanel-v2ray)大佬+个人修改部分内容
  - 不建议内存低于512M超小鸡使用，java本身占用内存很高。
  - 每天0点自动检查v2ray更新，因此基本不用管它。
 
@@ -29,7 +29,7 @@ cd /v2ray
 ```
 
  - 修改 config.properties 文件
- 几个重点配置项
+ 几个重点配置项说明
 ```
 - v2ray.system (操作系统，可选值：linux、windows)
 - v2ray.arch (操作系统位数，可选值：32、64)
@@ -38,7 +38,7 @@ cd /v2ray
 - v2ray.alter-id (与面板里设定的额外ID一致)
 - v2ray.level (用户等级，暂无用)
 ```
-~~用默认参数就好，现在也没小鸡还32位了吧=，=~~
+~~上面用默认参数就好，现在也没小鸡还32位了吧=，=~~
  - 数据库配置(远程连接SSRPanel的数据库，必须严格填写)
 ```
 - node.id (面板添加节点后得到的节点ID)
