@@ -77,7 +77,7 @@ dpkg-reconfigure tzdata
 ````
 ***
 #### 安装caddy对接
-选择3，端口默认10086(也可作为旧版v2ray 4.9.0一键懒人安装方式）
+选择3，端口默认10086(也可作为大佬的v2ray GO版一键懒人安装方式）
 ```
 bash <(wget --no-check-certificate -qO- https://git.io/deploy_node.sh)
 ```
