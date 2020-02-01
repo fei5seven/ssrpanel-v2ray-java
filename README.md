@@ -12,6 +12,7 @@
   * [脚本使用方法](#脚本使用方法)
   * [修改时区](#修改时区)
   * [安装caddy对接](#安装caddy对接)
+  * [配置宝塔对接](#配置宝塔对接)
   * [安装锐速](#安装锐速)
 ***
 #### 安装JDK
@@ -83,4 +84,16 @@ dpkg-reconfigure tzdata
 bash <(wget --no-check-certificate -qO- https://git.io/deploy_node.sh)
 ```
 ***
+#### 配置宝塔面板对接
+最后一个｝前加入如下代码
+```
+        location /ray {
+        proxy_redirect off;
+        proxy_pass http://127.0.0.1:10000;#假设WebSocket监听在环回地址的10000端口上
+        proxy_http_version 1.1;
+        proxy_set_header Upgrade $http_upgrade;
+        proxy_set_header Connection "upgrade";
+        proxy_set_header Host $http_host;
+        }
+ ```
 #### [安装锐速](https://github.com/fei5seven/lotServer)
