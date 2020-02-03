@@ -239,6 +239,7 @@ firewall_set(){
 			firewall-cmd --permanent --zone=public --add-port=80/tcp
 			firewall-cmd --permanent --zone=public --add-port=443/udp
 			firewall-cmd --permanent --zone=public --add-port=80/udp
+			firewall-cmd --reload
 			if [[ $v2ray_Port ]]; then
 				firewall-cmd --permanent --zone=public --remove-port=${v2ray_Port}/tcp
 				firewall-cmd --permanent --zone=public --remove-port=${v2ray_Port}/udp
