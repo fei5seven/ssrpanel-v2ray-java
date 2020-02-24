@@ -262,12 +262,12 @@ firewall_set(){
 		if [ $? -eq 0 ]; then
 			iptables -D INPUT -p tcp --dport 443 -j ACCEPT
 			iptables -D INPUT -p tcp --dport 80 -j ACCEPT
-			iptables -A INPUT -p tcp --dport 443 -j ACCEPT
-			iptables -A INPUT -p tcp --dport 80 -j ACCEPT
+			iptables -A INPUT -p udp --dport 443 -j ACCEPT
+			iptables -A INPUT -pudcp --dport 80 -j ACCEPT
 			ip6tables -D INPUT -p tcp --dport 443 -j ACCEPT
 			ip6tables -D INPUT -p tcp --dport 80 -j ACCEPT
-			ip6tables -A INPUT -p tcp --dport 443 -j ACCEPT
-			ip6tables -A INPUT -p tcp --dport 80 -j ACCEPT
+			ip6tables -A INPUT -p udp --dport 443 -j ACCEPT
+			ip6tables -A INPUT -p udp --dport 80 -j ACCEPT
 			iptables -L -n | grep -i ${v2ray_Port} > /dev/null 2>&1
 			if [ $? -ne 0 ]; then
 				iptables -D INPUT -p tcp --dport ${v2ray_Port} -j ACCEPT
