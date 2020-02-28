@@ -4,7 +4,7 @@
  > 此为ssrpanel面板（4.8.0）对应的V2ray后端。整理自[MoeGrid](https://github.com/MoeGrid/ssrpanel-v2ray)大佬和[ColetteContreras]( https://github.com/ColetteContreras/v2ray-ssrpanel-plugin)大佬+个人修改部分内容
  > 不建议内存低于512M超小鸡使用，java本身占用内存很高。
  > 默认模式为ws+tls，每天0点自动检查v2ray更新，因此基本不用管它。
- > 虽然被胖虎大佬喷java后台简陋，但是他真的很少出问题并且能随时更新后端啊.jpg
+ > 虽然被胖虎大佬说java后台简陋，但是他真的很少出问题并且能随时更新后端啊.jpg
 
 ***
   * [安装JDK](#安装JDK)
