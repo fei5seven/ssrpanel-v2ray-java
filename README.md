@@ -1,6 +1,6 @@
 # ssrpanel-v2ray-java
  ~~基本完事了，不会再更新了。~~  
-  好吧，我又更新了。把文件从上往下翻了个遍改了一下更新地址到@v2fly 的库了。
+  好吧，我又更新了。把文件从上往下翻了个遍改了一下更新地址到[v2fly](https://github.com/v2fly/v2ray-core)的库了。
  > ~~本意是方便自己复制粘贴新建小鸡的项目，让胖虎大佬反向star受宠若惊，连滚带爬的修改了一下readme以示敬意。~~  
  > 此为ssrpanel面板（4.8.0）对应的V2ray后端。整理自[MoeGrid](https://github.com/MoeGrid/ssrpanel-v2ray)大佬和[ColetteContreras]( https://github.com/ColetteContreras/v2ray-ssrpanel-plugin)大佬+个人修改部分内容
  > 不建议内存低于512M超小鸡使用，java本身占用内存很高。
