@@ -35,7 +35,7 @@ service_Cmd() {
 	fi
 }
 
-$cmd update -y
+$cmd –exclude=kernel* update -y
 $cmd install -y wget curl unzip git gcc vim lrzsz screen ntp ntpdate cron net-tools telnet python-pip m2crypto
 # 设置时区为CST
 echo yes | cp /usr/share/zoneinfo/Asia/Shanghai /etc/localtime
