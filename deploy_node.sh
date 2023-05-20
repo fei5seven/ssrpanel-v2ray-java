@@ -167,9 +167,9 @@ install_caddy() {
 	local caddy_tmp="/tmp/install_caddy/"
 	local caddy_tmp_file="/tmp/install_caddy/caddy.tar.gz"
 	if [[ $sys_bit == "i386" || $sys_bit == "i686" ]]; then
-		local caddy_download_link="https://github.com/fei5seven/ssrpanel-v2ray-java/raw/master/resource/caddy/0.11.5/caddy_linux_386.tar.gz"
+		local caddy_download_link="https://github.com/fei5seven/ssrpanel-v2ray-java/raw/master/resource/caddy/1.0.4/caddy_linux_386.tar.gz"
 	elif [[ $sys_bit == "x86_64" ]]; then
-		local caddy_download_link="https://github.com/fei5seven/ssrpanel-v2ray-java/raw/master/resource/caddy/0.11.5/caddy_linux_amd64.tar.gz"
+		local caddy_download_link="https://github.com/fei5seven/ssrpanel-v2ray-java/raw/master/resource/caddy/1.0.4/caddy_linux_amd64.tar.gz"
 	else
 		echo -e "$red 自动安装 Caddy 失败！不支持你的系统。$none" && exit 1
 	fi
