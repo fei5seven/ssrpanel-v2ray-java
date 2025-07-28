@@ -17,7 +17,7 @@ start()
     echo -n $"Starting $prog: "  
     echo "v2ray-java启动中"  
 	cd /v2ray
-	nohup java -jar ssrpanel-v2ray.jar  > log.file  2>&1 & new_agent_pid=$! 
+	nohup java -jar ssrpanel-v2ray-old.jar  > log.file  2>&1 & new_agent_pid=$! 
 	echo "$new_agent_pid" > $DIALUP_PID 
 	sleep 1
     echo "启动成功" 
